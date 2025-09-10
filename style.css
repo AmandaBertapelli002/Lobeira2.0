@@ -528,6 +528,33 @@ font-family: 'ClashDisplay', sans-serif;
         max-width: 250px;
         margin: 0 auto;
     }
+    #section4 .left .item {
+        background-color: #48A34D;
+        width: 90%;
+        margin: auto;
+        padding: 25px 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1; /* ocupa toda altura do .left */
+    }
+
+    #section4 {
+        display: flex;
+        margin: auto;
+        flex-direction: column; /* para ter title + content */
+        min-height: 700px;
+        background-color: #2A5613;
+        color: #F7F2DC;
+        text-align: center;
+        background-image: url('img/galho.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 0;
+        padding: 0%;
+    }
 }
 /* ====== 5ª SECTION ====== */
 #section5 {
@@ -593,7 +620,7 @@ font-family: 'ClashDisplay', sans-serif;
         margin: 0 auto;
     }
     #section5 h1 {
-        font-size: 7rem;
+        font-size: 5rem;
     }
 }
 /* ====== 6ª SECTION ====== */
