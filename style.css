@@ -25,6 +25,7 @@
 }
 
 body {
+    max-width: 100%;
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
     color: #000;
@@ -329,8 +330,33 @@ section {
     margin: 30px 0 0 0;
     font-family: 'ClashDisplay', sans-serif;
 }
+@media (max-width: 768px) {
+    #section3 h1 {
+        font-size: 1.5rem;
+        line-height: +1;
+        margin-bottom: 15px;
+    }
+    .card img {
+        width: 60px; /* tamanho fixo para todos os ícones */
+        height: 60px; /* garante proporção consistente */
+        margin-bottom: 15px;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* sempre 3 colunas */
+        gap: 35px;
+        margin-bottom: 00px;
+    }
 
+    #section3 p {
+        display: flex;          /* transforma em flexbox */
+        align-items: center;    /* alinha verticalmente texto e imagem */
+        justify-content: center; /* opcional: centraliza horizontalmente */
+        gap: 5px;               /* espaço entre texto e imagem */
+        margin-bottom: 10px;
+    }
 
+}
 
 /* ====== 4ª SECTION ====== */
 #section4 {
@@ -522,15 +548,10 @@ font-family: 'ClashDisplay', sans-serif;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     margin-bottom: 20px;
 }
 
-#section5 .team img {
-    width: 300px;
-    height: 500px;
-    object-fit: cover;
-}
 
 #section5 p {
     font-weight: 500;
@@ -539,8 +560,8 @@ font-family: 'ClashDisplay', sans-serif;
 }
 
 #section5 .team img {
-    width: 400px;   /* tamanho padrão no desktop */
-    min-height: 300px;   /* mantém proporção */
+    width: 24%;   /* tamanho padrão no desktop */
+    min-height: 100px;   /* mantém proporção */
     object-fit: cover;
 }
 
@@ -559,7 +580,7 @@ font-family: 'ClashDisplay', sans-serif;
         margin: 0 auto;
     }
     #section5 h1 {
-        font-size: 7rem;
+        font-size: 5rem;
     }
 }
 
@@ -661,6 +682,52 @@ font-family: 'ClashDisplay', sans-serif;
     text-align: right;
 }
 
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+    #section6 .servicos {
+      width: 85%;
+    }
+  
+    #section6 h2 {
+      font-size: 2.2rem;
+    }
+  
+    #section6 .final-price {
+      font-size: 1.7rem;
+    }
+  }
+  
+  /* Responsividade para celulares */
+  @media (max-width: 768px) {
+    #section6 .servicos {
+      width: 95%;
+    }
+  
+    #section6 h2 {
+      font-size: 1.8rem;
+      line-height: 1.2;
+    }
+  
+    #section6 .service-list div {
+      flex-wrap: wrap; /* permite quebrar em várias linhas */
+    }
+  
+    #section6 .service-list div span:first-child {
+      white-space: normal; /* deixa o texto quebrar */
+      flex: 1; /* ocupa espaço disponível */
+    }
+  
+    #section6 .final-price {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    #section6 .note {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  }
+  
 
 /* Ajuste da 7ª SECTION */
 #section7 {
