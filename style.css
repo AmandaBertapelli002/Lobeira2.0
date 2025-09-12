@@ -759,6 +759,30 @@
     width: 70%;
   }
   
+  @media (max-width: 768px) {
+    .service-list > div {
+      display: flex;
+      align-items: center;
+    }
+  
+    .service-list span:first-child {
+      flex: 1;
+      text-align: left;
+    }
+  
+    .service-list .line {
+      flex: 1;
+      border-bottom: 1px dotted #ccc; /* opcional */
+      margin: 0 8px;
+    }
+  
+    .service-list span:last-child {
+      text-align: right;
+      min-width: 100%;
+    }
+  }
+  
+  
   /* Better responsive behavior for services section */
   @media (max-width: 1024px) {
     #section6 .servicos {
