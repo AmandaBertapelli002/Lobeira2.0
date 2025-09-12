@@ -205,6 +205,16 @@
     section {
       padding: 40px 4%;
     }
+
+    #section1 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background: url("img/florMobile.png") center / cover no-repeat;
+        color: #f7f2dc;
+        min-height: 500px;
+        max-height: 800px;
+      }
   }
   
   /* ====== 1ª SECTION ====== */
@@ -296,7 +306,7 @@
   }
   
   #section2 {
-    background: linear-gradient(rgba(247, 242, 220, 0.3), rgba(247, 242, 220, 0.3)), url("img/folhasNervuras.png");
+    background: url("img/folhasNervuras.png") center / cover no-repeat;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -654,7 +664,7 @@
     display: grid; /* Changed to grid for better control */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
-    gap: 15px;
+    gap: 70px;
     margin-bottom: 20px;
   }
   
