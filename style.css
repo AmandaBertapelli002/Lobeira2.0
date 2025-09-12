@@ -261,13 +261,12 @@ section {
 
 /* ====== 3ª SECTION ====== */
 #section3 {
-    background-color: #2A5613;
+    background: transparent;
     color: #F7F2DC;
     text-align: center;
-    background-image: url('img/galho2.png');
-     background-repeat: no-repeat;
-     background-size: cover;
+     background-position: top center;
      font-family: 'ClashDisplay', sans-serif;
+     
 }
 
 #section3 h1 {
@@ -357,18 +356,33 @@ section {
     } 
 
 }
+.wrapper-sections {
+    background-color: #2A5613; /* cor base */
+    background-image: url('img/galho2.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+  
+  #section3, 
+  #section4 {
+    background: transparent; /* deixa só o conteúdo */
+    color: #F7F2DC;          /* cor do texto */
+    min-height: 700px;
+    padding: 80px 10%;
+    text-align: center;
+  }
+  
 
 /* ====== 4ª SECTION ====== */
 #section4 {
     display: flex;
     flex-direction: column; /* para ter title + content */
     min-height: 700px;
-    background-color: #2A5613;
+    background: transparent;
     color: #F7F2DC;
     text-align: center;
-    background-image: url('img/galho.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 1400px; /* mesmo tamanho total */
     padding-bottom: 0;
     padding-left: 2%;
 }
@@ -549,7 +563,7 @@ font-family: 'ClashDisplay', sans-serif;
         background-color: #2A5613;
         color: #F7F2DC;
         text-align: center;
-        background-image: url('img/galho.png');
+        background-image: url('img/galho2.png');
         background-repeat: no-repeat;
         background-size: cover;
         padding-bottom: 0;
@@ -587,7 +601,7 @@ font-family: 'ClashDisplay', sans-serif;
 }
 
 #section5 .team img {
-    width: 24%;   /* tamanho padrão no desktop */
+    width: 22%;   /* tamanho padrão no desktop */
     min-height: 100px;   /* mantém proporção */
     object-fit: cover;
 }
@@ -600,7 +614,7 @@ font-family: 'ClashDisplay', sans-serif;
     }
 
     #section5 .team img {
-        width: 400px;
+        width: 100%;
         max-width: 350px;
         height: 350px;       /* altura fixa menor no mobile */
         object-fit: contain;  /* mantém proporção sem cortar */
@@ -758,15 +772,19 @@ font-family: 'ClashDisplay', sans-serif;
 
 /* Ajuste da 7ª SECTION */
 #section7 {
-font-family: 'ClashDisplay', sans-serif;
-background-image: url('img/Raiz.png');
-background-repeat: repeat;
-background-size: cover;
-background-color: #2A5613;
-text-align: center;
-padding: 80px 10%;
+    font-family: 'ClashDisplay', sans-serif;
+    background-image: url('img/Raiz.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-color: #2A5613;
+    text-align: center;
+    background-blend-mode: overlay;  /* mistura a cor com a imagem */
+    padding: 80px 10%;
 
-}
+  }
+  
+  
 
 #section7 h2 {
 font-size: 3rem;
