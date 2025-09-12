@@ -1045,7 +1045,21 @@
   
   #sectionVideo h2 {
     text-align: center;
+    font-family: "ClashDisplay", sans-serif;
     font-size: clamp(2rem, 4vw, 3rem); /* Responsive font size */
     word-spacing: 8px;
     color: #f7f2dc;
   }
+
+    
+  @media (max-width: 480px) {
+    .video-container {
+        margin: auto;
+        margin-top: 0px;;
+        position: relative;
+        width: 100%;
+        height: 80vh; /* ocupa 80% da altura da tela */
+        max-height: 50%; /* limite opcional para não ficar gigante em monitores muito grandes */
+      }
+    }
+  
